@@ -4,10 +4,10 @@
 	<head>
 		<meta charset='utf-8'>
 
-		<title>Nick Cox: Fighting Burnout / Burlington Ruby</title>
+		<title>Nick Cox: We All Make Mistakes / Cascadia Ruby Conference</title>
 
-		<meta name='description' content='A framework for easily creating beautiful presentations using HTML'>
-		<meta name='author' content='Hakim El Hattab'>
+    <meta name='description' content='My talk for Cascadia Ruby Conference'>
+		<meta name='author' content='Nick Cox'>
 
 		<meta name='apple-mobile-web-app-capable' content='yes' />
 		<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
@@ -16,7 +16,7 @@
 
 		<link rel='stylesheet' href='css/reveal.min.css'>
 		<link rel='stylesheet' href='css/theme/nick-custom.css' id='theme'>
-    <link rel='stylesheet' type='text/css' href='//cloud.typography.com/7494032/621602/css/fonts.css' />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7494032/643882/css/fonts.css" />
 
 		<!-- For syntax highlighting -->
 		<link rel='stylesheet' href='lib/css/zenburn.css'>
@@ -42,104 +42,127 @@
 			<div class='slides'>
 
         <section id='slide-1' data-transition='fade' data-background='#28D6C4' data-transition-speed='slow'>
-          <h1>[e</h1>
+          <h1>I make mistakes.</h1>
           <aside class='notes'>
             <ul>
-              <li>I work with a dev: Geoff</li>
-              <li>Few times in a career</li>
-              <li>Weird habits: standing, eating, Vim</li>
-              <li>Paring together: never used mouse</li>
-              <li>I decided: to use it for one keystroke: [e</li>
-              <li>Irony of this choice</li>
+              <li>It's hard to admit that, etc…wanting to be held up as an expert</li>
+              <li>I want you to think of me as perfect.</li>
             </ul>
           </aside>
 				</section>
 
         <section id='slide-2' data-transition='fade' data-transition-speed='slow' data-background='#fff'>
-          <img src='img/zeus-gem.png' />
+          <h1>Thesis</h1>>
+          <p>We work in an environment in which perfection is a goal. Because of this, it is <span>difficult to openly admit that we make mistakes</span>. However, <span>mistakes</span> in software are <span>inevitable</span>. We must work to <span>encourage a culture of openness</span> so that we can <span>learn from each other's mistakes</span> and <span>minimize feelings of isolation and shame</span>.</p>
           <aside class='notes'>
             <ul>
-              <li>Found gems like Zeus, Spork, preloaders.</li>
-              <li>Saved seconds at a time</li>
-              <li>Began to optimize dotfiles, vimrc, plugins</li>
+              <li>Perfection: no build breaks, zero downtime, 100% code coverage</li>
+              <li>Inevitable. including community leaders. Come back to that</li>
             </ul>
+          </aside>
 				</section>
 
         <section id='slide-3' data-background='#262E3B' data-transition-speed='slow'>
-          <h1>Thesis</h1>
-					<p>
-          We can be more productive through <span>sleep</span>, <span>meditation</span>, and <span>healthy habits</span> than through editor shortcuts.</p>
+          <h1>Oops.</h1>
+          <pre><code data-trim contenteditable>
+             -# haml
+             = favicon_link_tag 'favicons/apple-touch-icon-ipad.png',    rel: 'apple-touch-icon', type: 'image/png'
+             = favicon_link_tag 'favicons/apple-touch-icon-ipad3.png',   rel: 'apple-touch-icon', type: 'image/png'
+             = favicon_link_tag 'favicons/apple-touch-icon-ipphone.png', rel: 'apple-touch-icon', type: 'image/png'
+             = favicon_link_tag 'favicons/apple-touch-icon-iphone4.png', rel: 'apple-touch-icon', type: 'image/png'
+					</code></pre>
+
           <aside class='notes'>
             <ul>
-              <li>productivity, as measured by editor shortcuts, gems</li>
-              <li>shortsighted at best, counterproductive at worst.</li>
-              <li>Greater overall improvements in efficiency are gained through sleep and meditation.</li>
-              <li>Should be at about 3:00 here</li>
+              <li>I wish I could have a more epic fail</li>
+              <li>this was the worst in that it caused the greatest self-doubt.</li>
+              <li>The one that made me say the most harshly, "I have no business developing software."</li>
+              <li>This is how I got into this. Therapist. Shame.</li>
           </aside>
 				</section>
 
         <section id='slide-4' data-transition='fade' data-background='#ff5e99' data-transition-speed='slow'>
-          <h3>So…you do a lot of typing?</h3> 
+          <h1>Why this talk?</h1>
           <aside class='notes'>
             <ul>
-              <li>There is typing, but there's much more</li>
-              <li>Shout out, if you would, what is the essence of programming?</li>
-              <li>Keep those in mind; shift gears; brain</li>
+              <li>And that's why I put together this talk.</li>
+              <li>Because it's easy to believe that mistakes are a reflection of who you are. This makes them hard to talk about.</li>
+              <li>It's impossible to turn that into something you can learn from.</li>
+            </ul>
           </aside>
 				</section>
 
 				<section id='slide-5' data-transition='fade' data-background='#fff' data-transition-speed='fast'>
-          <img class='no-shadow' src='img/brain.svg' />
+          <h1>Do you remember?</h1>
           <aside class='notes'>
             <ul>
-              <li>I assumed programming used every part of brain.</li>
-              <li>Thought, memory, emotion, creativity, reading, speech</li>
-              <li>Brain accounts for 2% of body weight, takes 20-25% of calories</li>
+              <li>Brian Goldman, Toronto ER doctor</li>
+              <li>His talk about woman with congestive heart failure. Heartbreaking.</li>
+              <li>His vulnerability of saying, I make mistakes. And interviewing others.</li>
             </ul>
           </aside>
 				</section>
 
 				<section id='slide-6' data-transition='fade' data-background='#fff' data-transition-speed='slow'>
-          <img class='no-shadow' src='img/prefrontal-cortex.png' />
-          <aside class='notes'>
-            <ul>
-              <li>Location in front of brain</li>
-              <li>Takes roughly 25% of glucose of brain</li>
-              <li>If the brain had body, it's the brain's brain</li>
-              <li>'Executive function' umbrella term organizing and planning to goal setting, problem-solving, abstract thinking</li>
-            </ul>
-          </aside>
-				</section>
+        <p>"They want to share their stories. The want to be able to say, 'Look, don't make the same mistake I did.' What they need is an environment to be able to do that. What they need is a redefined [medical culture]. And it starts with one physician at a time. The redefined physician is human, knows she's human, accepts it, isn't proud of making mistakes, but strives to learn one thing from what happened that she can teach to somebody else."
+        </p>
+       	</section>
 
         <section id='slide-7' data-transition='none'>
-          <img class='no-shadow' src='img/venn-diagram-1.svg' />
-				</section>
-				<section id='slide-8' data-transition='none'>
-          <img class='no-shadow' src='img/venn-diagram-2.svg' />
-				</section>
-        <section id='slide-9' data-transition='none'>
-          <img class='no-shadow' src='img/venn-diagram-3.svg' />
+          <h1>Software isn’t life or death.</h1>
           <aside class='notes'>
             <ul>
-              <li>Our ability to program/executive function effected by sleep</li>
-              <li>Not a surprise, but the extent is interesting</li>
+              <li>I work for Navigating Cancer.</li>
+              <li>It's easy to convince yourself it is life or death, but it often isn't.</li>
+              <li>But it is important</li>
+              <li>And it is difficult.</li>
             </ul>
           </aside>
 				</section>
 
-        <section id='slide-10'>
-          <img src='img/uptime.png' />
+				<section id='slide-8' data-transition='none'>
+          <h1><em>Is</em> software difficult?</h1>
           <aside class='notes'>
-            <ul>
-              <li>We ask a lot of computers</li>
-              <li>Wife think like kids, vets think like animals, we think like comupters</li>
-              <li>We are happier healthier more productive when we accept our limitations</li>
-            </ul>
+          <ul>
+            <li>Watching screencasts, it's hard to believe that it is hard.</li>
+            <li>I can remember a number of RailsCasts where Ryan seemed to be improvising code, and his API knowledge just flowed forth.</li>
           </aside>
 				</section>
-        
+
+        <section id='slide-9' data-transition='none'>
+          <h1>I’m going to be found out.</h1>
+          <aside class='notes'>
+            <ul>
+              <li>RubyRogues podcast on impostor syndrome</li>
+              <li>Avdi Grimm talks about his experience with impostor syndrome.</li>
+            </ul>
+          </aside>
+          </section>
+
+        <section id='slide-10'>
+          <img src='img/mind-blown.gif' />
+        </section>
+
+
+        <section id='slide-10'>
+          <pre><code data-trim contenteditable>
+            if software.hard?
+              I.has?(hope)
+            end
+          </code></pre>
+        </section>
+
         <section id='slide-11' data-background='#262E3B' data-transition='none'>
-          <h1>Sleep</h1>
+          <pre><code data-trim contenteditable>
+            software_ability != intelligence
+          </code></pre>
+          <aside class='notes'>
+            <ul>
+              <li>It's easy to equate software acumen with intelligence.</li>
+              <li>Then it becomes she is smart because she fixed this error, and I am stupid because I didn't.</li>
+              <li>Other reasons. It's not about who I am as a person, it's a _Flaw in thinking_ we'll come back to.</li>
+            </ul>
+          </aside>
 				</section>
 
         <section id='slide-12' data-transition='none'>
@@ -385,7 +408,9 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'socket.io/socket.io.js', async: true },
+          { src: 'plugin/notes-server/client.js', async: true }
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
