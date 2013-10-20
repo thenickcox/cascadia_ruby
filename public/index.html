@@ -52,7 +52,7 @@
 				</section>
 
         <section id='slide-2' data-transition='fade' data-transition-speed='slow' data-background='#fff'>
-          <h1>Thesis</h1>>
+          <h1>Thesis</h1>
           <p>We work in an environment in which perfection is a goal. Because of this, it is <span>difficult to openly admit that we make mistakes</span>. However, <span>mistakes</span> in software are <span>inevitable</span>. We must work to <span>encourage a culture of openness</span> so that we can <span>learn from each other's mistakes</span> and <span>minimize feelings of isolation and shame</span>.</p>
           <aside class='notes'>
             <ul>
@@ -65,11 +65,11 @@
         <section id='slide-3' data-background='#262E3B' data-transition-speed='slow'>
           <h1>Oops.</h1>
           <pre><code data-trim contenteditable>
-             -# haml
-             = favicon_link_tag 'favicons/apple-touch-icon-ipad.png',    rel: 'apple-touch-icon', type: 'image/png'
-             = favicon_link_tag 'favicons/apple-touch-icon-ipad3.png',   rel: 'apple-touch-icon', type: 'image/png'
-             = favicon_link_tag 'favicons/apple-touch-icon-ipphone.png', rel: 'apple-touch-icon', type: 'image/png'
-             = favicon_link_tag 'favicons/apple-touch-icon-iphone4.png', rel: 'apple-touch-icon', type: 'image/png'
+ -# haml
+ = favicon_link_tag 'favicons/apple-touch-icon-ipad.png' ...
+ = favicon_link_tag 'favicons/apple-touch-icon-ipad3.png' ...
+ = favicon_link_tag 'favicons/apple-touch-icon-ipphone.png' ...
+ = favicon_link_tag 'favicons/apple-touch-icon-iphone4.png' ...
 					</code></pre>
 
           <aside class='notes'>
@@ -146,9 +146,9 @@
 
         <section id='slide-10'>
           <pre><code data-trim contenteditable>
-            if software.hard?
-              I.has?(hope)
-            end
+if software.hard?
+  I.has?(hope)
+end
           </code></pre>
         </section>
 
@@ -166,157 +166,116 @@
 				</section>
 
         <section id='slide-12' data-transition='none'>
-          <img class='no-shadow' src='img/rem.jpg' />
-				</section>
-				<section id='slide-13' data-transition='none'>
-          <img class='no-shadow' src='img/nrem.jpg' />
+          <h1>What is the worst coding mistake you have ever made?</h1>
+          <aside class='notes'>
+            <ul>
+              <li>Think about it. Think about how you dealt with it at work</li>
+              <li>Notice how you feel about it.</li>
+            </ul>
+          </aside>
+
 				</section>
 
 
 				<section id='slide-14' data-transition='linear' data-background='#F68530' data-background-transition='slide'>
-          <div class='column'>
-            <h3>REM Sleep</h3>
-            <img class='no-shadow' src='img/awake.svg' />
-          </div>
-          <div class='column'>
-            <h3>Non-REM Sleep</h3>
-            <img class='no-shadow' src='img/asleep.svg' />
-          </div>
+          <h1>We all make mistakes.</h1>
           <aside class='notes'>
             <ul>
-              <li>During REM sleep, brain is active, stimulated (where dreams come from)</li>
-              <li>nREM is recovery; this is where we need to be restored</li>
+              <li>I reached out to some community leaders to talk about this</li>
             </ul>
           </aside>
 				</section>
 
 				<section id='slide-15' data-transition='linear' data-background='#223232' data-background-transition='slide'>
-          <p>[The prefrontal cortex] plays a prominent role in waking executive functions which are <em>preferentially impaired</em> following sleep deprivation.
-          </p>
-          <cite>(Nofzinger, E., 2013, p. 203, my italics).</cite>
-          <aside class='notes'>
-            <ul>
-              <li>Executive tasks impaired following sleep deprivation, and restored after 'recovery sleep.'</li>
-              <li>Tasks involving executive function are adversely affected by, and thus especially vulnerable to, sleepiness</li>
-              <li>When working, especially when pairing, our prefrontal cortex is the first thing to go. Focused work is harder, productivity is scarcer</li>
-            </ul>
-          </aside>
+          <h1>Ashe Dryden</h1>
+          <h2>Speaker, Author, Developer, Diversity Advocate</h2>
 				</section>
 
-        <section id='slide-16' data-background='#AF0002'>
-          <h3>
-            <span class='s1'>S</span>
-            <span class='t'>t</span>
-            <span class='r'>r</span>
-            <span class='e'>e</span>
-            <span class='s2'>s</span>
-            <span class='s3'>s</span>
-          </h3>
-          <aside class='notes'>
-            <ul>
-              <li>caveat: Average developer salary 2x the median household income</li>
-              <li>Name privilege</li>
-              <li>Developers educated w/access to further knowledge</li>
-              <li>Encourage us to see our privilege, but to acknowledge that most we tend to neglect our human needs</li>
-              <li>working 60+ hour weeks, building quick launches, etc. Are we eating well? Sleeping well?</li>
-          </aside>
+				<section id='slide-16'>
+          <h1>Johnny Boursquiot</h1>
+          <h2>Partner, Technology Director, Software Architect at MAARK</h2>
 				</section>
 
-				<section id='slide-17'>
-          <h2>Oops.</h2>
-					<pre><code data-trim contenteditable>
-- if current_user.logged_in?
-  = render 'announcements/announcement'
-					</code></pre>
-          <aside class='notes'>
-            <ul>
-              <li>over 50% of visitors getting an error page</li>
-              <li>Deployment time nearly 6 minutes. during that time, stressed out</li>
-              <li>I work for a cancer site, and deploying code successfully seemed like a matter of life and death. What do I wish I did? Relax, meditate.</li>
-          </aside>
-				</section>
+        <section id='slide-17'>
+          <h1>Steve Klabnik</h1>
+          <h2>Speaker, Rails Committer, Author, Philosopher</h2>
+        </section>
 
         <section id='slide-18' data-background='#fff'>
-          <ul>
-            <li class='ex1 exclamation'>!</span>
-            <li class='ex2 exclamation'>!</span>
-            <li class='ex3 exclamation'>!</span>
-            <li class='ex4 exclamation'>!</span>
-          </ul>
-          <img class='no-shadow' src='img/brain.svg' />
+          <h1>Where do we go from here?</h1>
           <aside class='notes'>
             <ul>
-              <li>What happens in the brain with stress?</li>
-              <li>Cortisol is released, parts of the brain are stimulated, incl. prefrontal cortex</li>
-              <li>as it involves the planning, and in this case is designed to plan the physical response to the stressor</li>
-              <li>Over time, stress leads to decreased blood flow to the prefrontal cortex. Like the town to the boy who cried wolf, it stops responding</li>
+              <li>Now that we've recognized that we make mistakes, how do we learn from them?</li>
+              <li>John Allspaw, engineer at Etsy: blameless postmortems</li>
             </ul>
           </aside>
 				</section>
 
         <section id='slide-19'>
-          <img src='img/meditate.png' />
+          <h1>Where do we go from here?</h1>
         </section>
 
-        <section id='slide-20' data-background='#C1D8EA'>
-          <h1>Breathe.</h1>
-          <div id='clouds'>
-            <div class='cloud x1'></div>
-            <!-- Time for multiple clouds to dance around -->
-            <div class='cloud x2'></div>
-            <div class='cloud x3'></div>
-            <div class='cloud x4'></div>
-            <div class='cloud x5'></div>
-          </div>
-          <aside class='notes'>
-            <ul>
-              <li>Stand up. Find your diaphragm.</li>
-              <li>Diaphragm works opposite of lungs. When it contracts, it allows lungs to expand.</li>
-              <li>4 fingers under where chest starts.</li>
-            </ul>
-          </aside>
-				</section>
-
-        <section id='slide-21' data-transition='fade' data-background='#223232' data-transition-speed='slow'>
-          <h2>Micromeditations</h2>
-          <img class='no-shadow' src='img/lotus.svg' />
+        <section id='slide-20'>
+          <h1>Blameless Postmortems</h1>
           <ul>
-            <li class='fragment'><span>Unit tests:</span> 1 breath.</li>
-            <li class='fragment'><span>Integration tests:</span> 3 breaths.</li>
-            <li class='fragment'><span>Rake tasks:</span> 5–10 breaths.</li>
+            <li class='fragment'>What actions they took at what time</li>
+            <li class='fragment'>What effects they observed</li>
+            <li class='fragment'>Expectations they had</li>
+            <li class='fragment'>assumptions they had made</li>
+            <li class='fragment'>Their understanding of timeline of events as they occurred</li>
           </ul>
+        </section>
+
+        <section id='slide-21'>
+          <h1>Change the conversation.</h1>
           <aside class='notes'>
             <ul>
-              <li>You don't need to meditate for 10 minutes every day.</li>
-              <li>With practice, you can recenter with one breath.</li>
+              <li>Change the conversation from thinking "I'm bad" to "I had a flaw in my thinking"
+              <li>That's something you can learn from</li>
             </ul>
           </aside>
           </section>
 
          <section id='slide-22' data-transition='fade' data-background='#fff' data-transition-speed='slow'>
-           <h2>Not everything<br />
-             needs to be measured.</h2> 
+          <h1>Navigating Cancer</h1>
           <aside class='notes'>
             <ul>
-              <li>Had planned to provide objective measures, but decided to just live.</li>
-              <li>Even if I had, my findings would've been biased. Small sample size, etc.</li>
-              <li>A change in thesis</li>
+              <li>We've been thinking about how to work with production mistakes.</li>
+              <li>We've experimented with the following strategies.</li>
+            </ul>
           </aside>
 				</section>
 
-        <section id='slide-23' data-transition='fade' data-background='#262E3B' data-transition-speed='slow'>
-          <h1>Thesis</h1>
-          <span class='happier'>happier</span>
-					<p>
-          We can be <span class='strikethrough'><span class='inner'>more productive</span></span> through <span>sleep</span>, <span>meditation</span>, and <span>healthy habits</span> than through editor shortcuts.</p>
+        <section id='slide-23'>
+          <h1>Encourage engineering team communication</h1>
+          <ul>
+            <li class='fragment'>Dev days or half days</li>
+            <li class='fragment'>Teamwide postmortems</li>
+            <li class='fragment'>Lunch & Learn</li>
+            <li class='fragment'>Consultancy? Write a post</li>
+          </ul>
           <aside class='notes'>
             <ul>
-              <li>Both personally and in my work as a therapist, these things affect health and wellbeing.</li>
+              <li><strong>Dev days:</strong> People need to be encouraged to experiment. In order to foster creativity.</li>
+              <li><strong>Postmortems:</strong> Production bugs are everyone's responsibility. Encourage openness and team wide communication. No blaming. Expose flaws in thinking.</li>
+              <li><strong>Lunch & Learn</strong> Have a developer bring in a piece of broken code, a piece of difficult or problematic code, a side project, or whatever. Brainstorm ideas as a team. Encourage trust. How to think as a team.</li>
+              <li><strong>Post:</strong> Not necessary to divulge all the details, but a lot of the googling I do that goes past StackOverflow is a consultancy that wrote a post on the topic. Position themselves as problem-solvers and experts.</li>
+            </ul>
           </aside>
 				</section>
 
-         <section id='slide-24' data-transition='fade' data-background='#F68530' data-transition-speed='slow'>
-           <h2>Be kind to yourself.</h2>
+        <section id='slide-24'>
+          <h1>Let’s talk about it.</h1>
+				</section>
+
+        <section id='slide-24'>
+          <img src='img/software-confessional.png' />
+				</section>
+
+        <section id='slide-24'>
+          <h1>Thanks.</h1>
+          <p>@everydaytype | github.com/thenickcox | nickcox.me</p>
+          <h2>Navigating Cancer</h2>
 				</section>
 
 				<!--<section>-->
@@ -328,23 +287,12 @@
 					<!--</script>-->
 				<!--</section>-->
 
-				
-
-				<section id='slide-25' data-transition='fade' data-transition-speed='slow'>
-          <h1>Thank you.</h1>
-          <p>@everydaytype | nickcox.me</p>
-				</section>
-
         <section id='slide-26' data-transition='fade' data-transition-speed='slow'>
-          <h3>References</h3>
+          <h3>Notes</h3>
           <ul>
-            <li>Bremner, D. (2003). <span class='book'>Does Stress Damage the Brain? Understanding Trauma-Related Disorders from a Mind-Body Perspective.</span> New York, NY: W.W. Norton.</li>
-
-            <li>Jackson, M. & Van Dongen, H. (2011). Cognitive effects of sleepiness In Thorpy, M. & Billiard, M. (Eds.), <span class='book'>Sleepiness: Causes, Consequences, and Treatment.</span> Cambridge, UK: Cambridge U.P.</li>
-
-            <li>Nofzinger, E. (2013). Functional neuroimaging of primary insomnia. In Nofzinger, E., Maquet, P., & Thorpy, M. (Eds.), <span class='book'>Neuroimaging of Sleep and Sleep Disorders</span>. Cambridge, UK: Cambridge U.P.</li>
-
-            <li>Oden, J. & Treem, W. (2003). Inborn errors of fasting adaptation. In Walker, A., Watkins, J., & Duggan, C. (Eds.), <span class='book'>Nutrition in Pediatrics: Basic Science and Clinical Applications<span>. Hamilton, ON: BC Decker, Inc.<li>
+            <li><a href='http://www.ted.com/talks/brian_goldman_doctors_make_mistakes_can_we_talk_about_that.html'>Ben Goldman: Doctors Make Mistakes. Can We Talk About That?</a></li>
+            <li><a href='http://rubyrogues.com/107-rr-impostor-syndrome-with-tim-chevalier/'>Ruby Rogues: Impostor Syndrome</a></li>
+            <li><a href='http://codeascraft.com/2012/05/22/blameless-postmortems/'>John Allspaw: Blameless Portems</a></li>
           </ul>
         </section>
 
@@ -355,22 +303,16 @@
               <ul>
                 <li>Sentinel.<em> Designed by Hoefler & Frère-Jones, 2009</em></li>
                 <li class='whitney'>Whitney.<em> Designed by Tobias Frère-Jones, date unknown</em></li>
-                <li class='market'>FF Market.<em> Designed by H.A. Simon, 1996</em></li>
               </ul>
             </li>
             <li>Tech
               <ul>
                 <li>Designed & developed using reveal.js, Sass, and Sinatra.rb</li>
                 <li>H&FJ Fonts served by Cloud.typography</li>
-                <li>FontFont fonts served by Typekit</li>
-                <li>Hand-coded in Vim (duh)</li>
+                <li>Hand-coded in Vim</li>
               </ul>
             </li>
-            <li>Other
-              <ul>
-                <li>Photo of REM by Anton Corbijn, 2010</li>
-              </ul>
-            </li>
+          </ul>
         </section>
 
 
