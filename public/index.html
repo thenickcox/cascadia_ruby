@@ -26,9 +26,6 @@
 			document.write( "<link rel='stylesheet' href='css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css' type='text/css' media='print'>" );
 		</script>
 
-    <!-- typekit -->
-    <script type='text/javascript' src='//use.typekit.net/fny0npi.js'></script>
-    <script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
 		<!--[if lt IE 9]>
 		<script src='lib/js/html5shiv.js'></script>
 		<![endif]-->
@@ -41,7 +38,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class='slides'>
 
-        <section id='slide-1' data-transition='fade' data-background='#28D6C4' data-transition-speed='slow'>
+        <section id='slide-1' data-transition='fade' data-transition-speed='slow'>
           <h1>I make mistakes.</h1>
           <aside class='notes'>
             <ul>
@@ -51,9 +48,14 @@
           </aside>
 				</section>
 
-        <section id='slide-2' data-transition='fade' data-transition-speed='slow' data-background='#fff'>
+        <section id='slide-2' data-transition='fade' data-background='#262e3b' data-transition-speed='slow'>
           <h1>Thesis</h1>
-          <p>We work in an environment in which perfection is a goal. Because of this, it is <span>difficult to openly admit that we make mistakes</span>. However, <span>mistakes</span> in software are <span>inevitable</span>. We must work to <span>encourage a culture of openness</span> so that we can <span>learn from each other's mistakes</span> and <span>minimize feelings of isolation and shame</span>.</p>
+          <ul>
+            <li class='fragment'>We work in a field in which <span>perfection is a goal</span></li>
+            <li class='fragment'>It is difficult to <span>openly admit that we make mistakes</span>
+            <li class='fragment'><span>Mistakes</span> in software are <span>inevitable</span></li>
+            <li class='fragment'>We must work to <span>encourage a culture of openness</span></li>
+            <li class='fragment'>So we can <span>learn from each other’s mistakes</span> and <span>minimize feelings of isolation and shame</span></li>
           <aside class='notes'>
             <ul>
               <li>Perfection: no build breaks, zero downtime, 100% code coverage</li>
@@ -62,8 +64,8 @@
           </aside>
 				</section>
 
-        <section id='slide-3' data-background='#262E3B' data-transition-speed='slow'>
-          <h1>Oops.</h1>
+        <section id='slide-3' data-background='' data-transition-speed='slow'>
+          <h2>Oops.</h2>
           <pre><code data-trim contenteditable>
  -# haml
  = favicon_link_tag 'favicons/apple-touch-icon-ipad.png' ...
@@ -82,7 +84,7 @@
 				</section>
 
         <section id='slide-4' data-transition='fade' data-background='#ff5e99' data-transition-speed='slow'>
-          <h1>Why this talk?</h1>
+          <h3>Why this talk?</h3>
           <aside class='notes'>
             <ul>
               <li>And that's why I put together this talk.</li>
@@ -93,7 +95,7 @@
 				</section>
 
 				<section id='slide-5' data-transition='fade' data-background='#fff' data-transition-speed='fast'>
-          <h1>Do you remember?</h1>
+          <h3>Do you remember?</h3>
           <aside class='notes'>
             <ul>
               <li>Brian Goldman, Toronto ER doctor</li>
@@ -103,25 +105,27 @@
           </aside>
 				</section>
 
-				<section id='slide-6' data-transition='fade' data-background='#fff' data-transition-speed='slow'>
-        <p>"They want to share their stories. The want to be able to say, 'Look, don't make the same mistake I did.' What they need is an environment to be able to do that. What they need is a redefined [medical culture]. And it starts with one physician at a time. The redefined physician is human, knows she's human, accepts it, isn't proud of making mistakes, but strives to learn one thing from what happened that she can teach to somebody else."
+        <section id='slide-6' data-transition='fade' data-background='#262e3b' data-transition-speed='slow'>
+        <span class='quote'>“</span>
+        <p>They want to share their stories. They want to be able to say, “Look, don’t make the same mistake I did.” What they need is an environment to be able to do that. What they need is a redefined medical culture. And it starts with one physician at a time. The redefined physician is human, knows she’s human, accepts it, isn’t proud of making mistakes, but strives to learn one thing from what happened that she can teach to somebody else.
         </p>
        	</section>
 
         <section id='slide-7' data-transition='none'>
-          <h1>Software isn’t life or death.</h1>
+          <h3>Software isn’t life or death.</h3>
           <aside class='notes'>
             <ul>
               <li>I work for Navigating Cancer.</li>
               <li>It's easy to convince yourself it is life or death, but it often isn't.</li>
+              <li>Especially when working with cancer patients, or a payments platform</li>
               <li>But it is important</li>
               <li>And it is difficult.</li>
             </ul>
           </aside>
 				</section>
 
-				<section id='slide-8' data-transition='none'>
-          <h1><em>Is</em> software difficult?</h1>
+				<section id='slide-8' data-background='#28D6C4' data-transition='none'>
+          <h2><em>Is</em> software difficult?</h2>
           <aside class='notes'>
           <ul>
             <li>Watching screencasts, it's hard to believe that it is hard.</li>
@@ -130,7 +134,7 @@
 				</section>
 
         <section id='slide-9' data-transition='none'>
-          <h1>I’m going to be found out.</h1>
+          <h3>I’m going to be found out.</h3>
           <aside class='notes'>
             <ul>
               <li>RubyRogues podcast on impostor syndrome</li>
@@ -144,7 +148,7 @@
         </section>
 
 
-        <section id='slide-10'>
+        <section id='slide-11' data-background='#ffffff'>
           <pre><code data-trim contenteditable>
 if software.hard?
   I.has?(hope)
@@ -152,10 +156,10 @@ end
           </code></pre>
         </section>
 
-        <section id='slide-11' data-background='#262E3B' data-transition='none'>
-          <pre><code data-trim contenteditable>
+        <section id='slide-12' data-background='#262E3B' data-transition='none'>
+          <code data-trim contenteditable>
             software_ability != intelligence
-          </code></pre>
+          </code>
           <aside class='notes'>
             <ul>
               <li>It's easy to equate software acumen with intelligence.</li>
@@ -165,8 +169,8 @@ end
           </aside>
 				</section>
 
-        <section id='slide-12' data-transition='none'>
-          <h1>What is the worst coding mistake you have ever made?</h1>
+        <section id='slide-13' data-background='#F68530' data-transition='none'>
+        <h3>What is the worst coding mistake <br />you have ever made?</h3>
           <aside class='notes'>
             <ul>
               <li>Think about it. Think about how you dealt with it at work</li>
@@ -177,8 +181,8 @@ end
 				</section>
 
 
-				<section id='slide-14' data-transition='linear' data-background='#F68530' data-background-transition='slide'>
-          <h1>We all make mistakes.</h1>
+				<section id='slide-14' data-transition='linear' data-background='#ffffff' data-background-transition='slide'>
+          <h3>We <em>all</em> make mistakes.</h3>
           <aside class='notes'>
             <ul>
               <li>I reached out to some community leaders to talk about this</li>
@@ -186,22 +190,26 @@ end
           </aside>
 				</section>
 
-				<section id='slide-15' data-transition='linear' data-background='#223232' data-background-transition='slide'>
-          <h1>Ashe Dryden</h1>
-          <h2>Speaker, Author, Developer, Diversity Advocate</h2>
+				<section id='slide-15' data-transition='linear' data-background='#fffffff' data-background-transition='slide'>
+          <img src='img/ashe-dryden.jpg' />
+          <h3>Ashe Dryden</h3>
+          <h4>Speaker, Author, Developer, Diversity Advocate</h4>
 				</section>
 
-				<section id='slide-16'>
-          <h1>Johnny Boursquiot</h1>
-          <h2>Partner, Technology Director, Software Architect at MAARK</h2>
+				<section id='slide-16' data-transition='linear' data-background='#fffffff' data-background-transition='slide'>
+          <img src='img/johnny-boursiquot.jpg' />
+          <h3>Johnny Boursquiot</h3>
+          <h4>Partner, Technology Director, Software Architect at MAARK</h4>
 				</section>
 
-        <section id='slide-17'>
-          <h1>Steve Klabnik</h1>
-          <h2>Speaker, Rails Committer, Author, Philosopher</h2>
+
+				<section id='slide-17' data-transition='linear' data-background='#fffffff' data-background-transition='slide'>
+          <img src='img/steve-klabnik.jpg' />
+          <h3>Steve Klabnik</h3>
+          <h4>Speaker, Rails Committer, Author, Philosopher</h4>
         </section>
 
-        <section id='slide-18' data-background='#fff'>
+        <section id='slide-18' data-background='#28d6c4'>
           <h1>Where do we go from here?</h1>
           <aside class='notes'>
             <ul>
@@ -211,22 +219,18 @@ end
           </aside>
 				</section>
 
-        <section id='slide-19'>
-          <h1>Where do we go from here?</h1>
-        </section>
-
-        <section id='slide-20'>
+        <section id='slide-19' data-background='#223232'>
           <h1>Blameless Postmortems</h1>
           <ul>
-            <li class='fragment'>What actions they took at what time</li>
-            <li class='fragment'>What effects they observed</li>
-            <li class='fragment'>Expectations they had</li>
-            <li class='fragment'>assumptions they had made</li>
-            <li class='fragment'>Their understanding of timeline of events as they occurred</li>
+            <li class='fragment'>What <span>actions</span> they took at what time</li>
+            <li class='fragment'>What <span>effects</span> they observed</li>
+            <li class='fragment'><span>Expectations</span> they had</li>
+            <li class='fragment'><span>Assumptions</span> they had made</li>
+            <li class='fragment'>Their understanding of <span>timeline of events</span> as they occurred</li>
           </ul>
         </section>
 
-        <section id='slide-21'>
+        <section id='slide-20'>
           <h1>Change the conversation.</h1>
           <aside class='notes'>
             <ul>
@@ -236,8 +240,8 @@ end
           </aside>
           </section>
 
-         <section id='slide-22' data-transition='fade' data-background='#fff' data-transition-speed='slow'>
-          <h1>Navigating Cancer</h1>
+         <section id='slide-21' data-transition='fade' data-background='#ffffff' data-transition-speed='slow'>
+          <img src='img/navigating-cancer-logo.png' />
           <aside class='notes'>
             <ul>
               <li>We've been thinking about how to work with production mistakes.</li>
@@ -246,8 +250,8 @@ end
           </aside>
 				</section>
 
-        <section id='slide-23'>
-          <h1>Encourage engineering team communication</h1>
+        <section id='slide-23' data-transition='fade' data-background='#f68530'>
+          <h2>Encourage team communication</h2>
           <ul>
             <li class='fragment'>Dev days or half days</li>
             <li class='fragment'>Teamwide postmortems</li>
@@ -265,17 +269,27 @@ end
 				</section>
 
         <section id='slide-24'>
-          <h1>Let’s talk about it.</h1>
+          <h2>Let’s talk about it.</h2>
 				</section>
 
-        <section id='slide-24'>
+        <section id='slide-25'>
           <img src='img/software-confessional.png' />
+          <h4>softwareconfessional.com</h4>
+          </section>
+
+        <section id='slide-26' data-transition='fade' data-background='#262e3b' data-transition-speed='slow'>
+          <h1>Conclusion</h1>
+          <ul>
+            <li class='fragment'>Mistakes are <span>inevitable</span></li>
+          <li class='fragment'>Change the conversation: <span>mistakes should teach</span></li>
+          <li class='fragment'>What are we doing as a culture to <span>encourage transparency?</span></li>
+        </ul>
 				</section>
 
-        <section id='slide-24'>
+        <section id='slide-27'>
           <h1>Thanks.</h1>
           <p>@everydaytype | github.com/thenickcox | nickcox.me</p>
-          <h2>Navigating Cancer</h2>
+          <p>softwareconfessional.com | navigatingcancer.com</p>
 				</section>
 
 				<!--<section>-->
@@ -287,7 +301,7 @@ end
 					<!--</script>-->
 				<!--</section>-->
 
-        <section id='slide-26' data-transition='fade' data-transition-speed='slow'>
+        <section id='slide-28' data-transition='fade' data-transition-speed='slow'>
           <h3>Notes</h3>
           <ul>
             <li><a href='http://www.ted.com/talks/brian_goldman_doctors_make_mistakes_can_we_talk_about_that.html'>Ben Goldman: Doctors Make Mistakes. Can We Talk About That?</a></li>
@@ -296,7 +310,7 @@ end
           </ul>
         </section>
 
-        <section id='slide-27' data-transition='fade' data-transition-speed='slow'> 
+        <section id='slide-29' data-transition='fade' data-transition-speed='slow'> 
           <h3>Colophon</h3>
           <ul>
             <li>Type

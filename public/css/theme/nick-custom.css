@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
  * Default theme for reveal.js.
  *
@@ -6,6 +5,7 @@
 /********************************************
  * VARIABLES
  ******************************************** */
+/* #28D6C4 */
 /********************************************
  * GLOBAL STYLES
  ******************************************** */
@@ -30,13 +30,11 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #eeeeee;
-  font-family: Helvetica;
   line-height: 0.9em;
   letter-spacing: 0.02em; }
 .reveal h1 {
   color: #dbffde;
   text-shadow: 3px 3px 2px #1ea89a;
-  font-family: "Sentinel A", "Sentinel B", Georgia;
   font-weight: 400;
   font-style: normal; }
 .reveal a:not(.image) {
@@ -51,6 +49,12 @@ body {
     color: #71e9f4;
     text-shadow: none;
     border: none; }
+.reveal ul {
+  list-style: none; }
+  .reveal ul li {
+    background: url("/img/triangle.svg") 0 0.4em no-repeat;
+    line-height: 1.4em;
+    padding-left: 1em; }
 .reveal .roll span:after {
   color: white;
   background: #0d99a5; }
@@ -118,126 +122,98 @@ body {
  * SPECIFIC SLIDES
  ******************************************** */
 #slide-1 h1 {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-  font-size: 3em; }
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  font-size: 3em;
+  color: #262e3b;
+  text-shadow: none; }
 
-#slide-3 #slide-2 h2 {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica; }
-
-#slide-3 h1, #slide-23 h1 {
-  font-size: 4em; }
-#slide-3 p, #slide-23 p {
+#slide-2 h1, #slide-26 h1 {
+  font-size: 4em;
+  font-family: "Sentinel A", "Sentinel B", Georgia; }
+#slide-2 li, #slide-26 li {
   font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
   text-align: left;
-  font-weight: 300;
-  font-size: 1.6em; }
-  #slide-3 p span, #slide-23 p span {
+  font-weight: 100; }
+  #slide-2 li span, #slide-26 li span {
     color: #28d6c4;
     font-weight: 600; }
 
+#slide-3 h2 {
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  font-syle: italic;
+  color: #262e3b; }
+
 #slide-4 h3 {
   color: white;
-  font-family: "Sentinel A", "Sentinel B";
-  font-size: 1.8em; }
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 0px #e1407b; }
 
 .reveal section .no-shadow {
   box-shadow: none;
   -webkit-box-shadow: none;
   border: none; }
 
-#slide-6 img {
+#slide-5 h3 {
+  color: #262e3b;
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  text-shadow: none; }
+
+#slide-6 p {
+  text-align: left;
+  z-index: 10;
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  letter-spacing: 0.015em;
+  font-weight: 300; }
+#slide-6 span.quote {
+  color: rgba(40, 214, 196, 0.2);
+  font-size: 6em;
   position: relative;
-  top: 5px; }
+  top: 0.6em;
+  right: 2.3em;
+  z-index: -1; }
+
+#slide-7 h3 {
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  color: #262e3b; }
+
+#slide-8 h2 {
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  color: white;
+  text-shadow: 3px 3px 2px #0ab8a6; }
+
+#slide-9 h3 {
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  color: #262e3b; }
 
 #slide-10 img {
   padding: 25px; }
 
-#slide-14 .column {
-  float: left;
-  width: 44%;
-  margin-right: 4%; }
-  #slide-14 .column h3 {
-    font-weight: 600;
-    font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-    text-shadow: 3px 3px 4px #dd6c17; }
-  #slide-14 .column img {
-    background: transparent; }
-
-#slide-15 p {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-  font-weight: 100;
-  font-size: 1.5em;
+#slide-13 h3 {
+  font-family: "Sentinel A", "Sentinel B", Georgia;
   text-align: left;
-  letter-spacing: 1px;
-  line-height: 1.33em;
-  color: #0ab8a6; }
-  #slide-15 p em {
-    font-weight: 500;
-    color: white; }
-  #slide-15 p:before {
-    content: "“";
-    font-family: "Sentinel A", "Sentinel B";
-    position: relative;
-    right: 20px;
-    top: 30px;
-    opacity: 0.17;
-    font-size: 5em;
-    width: 0;
-    float: left; }
-#slide-15 cite {
-  text-align: right;
-  font-family: "Sentinel A", "Sentinel B";
-  font-weight: 100;
-  float: right;
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  color: #00a997; }
+  text-shadow: 2px 2px 2px #d86712; }
 
-#slide-16 h3 {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1.7em;
-  text-shadow: 3px 3px 2px #910000; }
-#slide-16 span {
-  display: inline-block; }
-#slide-16 .s1 {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 0.6s;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; }
-#slide-16 .t {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 0.4s;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; }
-#slide-16 .r {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 0.9s;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; }
-#slide-16 .e {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 0.7s;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; }
-#slide-16 .s2 {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 0.6s;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; }
-#slide-16 .s3 {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 0.3s;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; }
+#slide-14 h3 {
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  color: #262e3b; }
+
+#slide-15 img, #slide-16 img, #slide-17 img {
+  width: 200px;
+  float: left;
+  margin-right: 0.5em;
+  margin-top: 0;
+  border: 5px solid #28d6c4;
+  border-radius: 110px 110px; }
+#slide-15 h3, #slide-16 h3, #slide-17 h3 {
+  text-align: left;
+  color: #262e3b;
+  font-family: "Sentinel A", "Sentinel B", Georgia; }
+#slide-15 h4, #slide-16 h4, #slide-17 h4 {
+  text-align: left;
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  font-style: italic;
+  color: #3f4754; }
 
 #slide-17 h2 {
   font-family: "Sentinel A", "Sentinel B";
@@ -247,277 +223,71 @@ body {
 #slide-17 pre code {
   padding: 20px; }
 
-#slide-18 li {
-  color: #b54575;
-  font-size: 3em;
-  list-style: none;
-  position: relative;
-  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-  font-weight: 900;
-  margin-right: 3em; }
-#slide-18 .exclamation {
-  box-shadow: 0 0 85px #b54575;
-  float: left;
-  padding: 40px;
-  border-radius: 80px; }
-#slide-18 .ex1 {
-  -webkit-animation: blinker 0.75s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-  -webkit-transform: rotate(-60deg);
-  right: 0em;
-  top: 3em; }
-#slide-18 .ex2 {
-  -webkit-animation: blinker 0.6s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-  -webkit-transform: rotate(-24deg);
-  right: 1.5em;
-  top: 1em; }
-#slide-18 .ex3 {
-  -webkit-animation: blinker 0.66s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-  -webkit-transform: rotate(36deg);
-  left: 6.4em;
-  top: 0.5em; }
-#slide-18 .ex4 {
-  -webkit-animation: blinker 0.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-  -webkit-transform: rotate(78deg);
-  left: 4em;
-  top: 3em; }
+#slide-18 h1 {
+  font-family: "Sentinel A", "Sentinel B", Georgia; }
 
-#slide-19 img {
-  padding: 20px; }
+#slide-19 h1 {
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  text-align: left;
+  font-size: 2.4em; }
+#slide-19 ul li {
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
+  color: white;
+  font-weight: 300; }
+  #slide-19 ul li span {
+    color: #28d6c4;
+    font-weight: 600; }
 
 #slide-20 h1 {
   font-family: "Sentinel A", "Sentinel B";
   font-style: italic;
-  color: #517086;
-  text-shadow: 2px 2px 0px white; }
-#slide-20 #clouds {
-  position: absolute; }
-#slide-20 .cloud {
-  width: 200px;
-  height: 60px;
-  background: white;
-  border-radius: 200px;
-  -moz-border-radius: 200px;
-  -webkit-border-radius: 200px;
-  position: relative; }
-  #slide-20 .cloud:before, #slide-20 .cloud:after {
-    content: "";
-    position: absolute;
-    background: white;
-    width: 100px;
-    height: 80px;
-    top: -15px;
-    left: 10px;
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-    -moz-transform: rotate(30deg); }
-  #slide-20 .cloud:after {
-    width: 120px;
-    height: 120px;
-    top: -55px;
-    left: auto;
-    right: 15px; }
-#slide-20 .x1 {
-  -webkit-animation: moveclouds 25s linear;
-  -moz-animation: moveclouds 25s linear;
-  -o-animation: moveclouds 25s linear; }
-#slide-20 .x2 {
-  left: -200px;
-  bottom: 100px;
-  -webkit-transform: scale(0.6);
-  -moz-transform: scale(0.6);
-  transform: scale(0.6);
-  opacity: 0.4;
-  -webkit-animation: moveclouds 65s linear;
-  -moz-animation: moveclouds 65s linear;
-  -o-animation: moveclouds 65s linear; }
-#slide-20 .x3 {
-  left: -250px;
-  top: -200px;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0.6;
-  -webkit-animation: moveclouds 30s linear;
-  -moz-animation: moveclouds 30s linear;
-  -o-animation: moveclouds 30s linear; }
-#slide-20 .x4 {
-  left: -470px;
-  top: -450px;
-  -webkit-transform: scale(0.75);
-  -moz-transform: scale(0.75);
-  transform: scale(0.75);
-  opacity: 0.35;
-  -webkit-animation: moveclouds 39s linear;
-  -moz-animation: moveclouds 39s linear;
-  -o-animation: moveclouds 39s linear; }
-#slide-20 .x5 {
-  left: -150px;
-  bottom: 35px;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0.6;
-  -webkit-animation: moveclouds 34s linear;
-  -moz-animation: moveclouds 34s linear;
-  -o-animation: moveclouds 34s linear; }
-
-#slide-21 h2 {
-  font-family: "Sentinel A", "Sentinel B";
-  text-shadow: 2px 2px 1px #1ea89a;
-  margin-bottom: 1em; }
-#slide-21 img {
-  width: 60px;
-  background: transparent;
-  -webkit-animation-name: Floatingx;
-  -webkit-animation-duration: 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-name: Floating;
-  -moz-animation-duration: 3.5s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease-in-out; }
-#slide-21 > ul {
-  list-style: none; }
-  #slide-21 > ul li {
-    font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-    text-shadow: 2px 2px 1px black; }
-  #slide-21 > ul span {
-    font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-    font-weight: 700;
-    float: left;
-    width: 11em; }
+  color: #262e3b;
+  text-shadow: 2px 2px 0px white;
+  font-size: 2.4em; }
 
 #slide-22 h2 {
   color: #223232;
-  letter-spacing: 1px;
-  font-family: "Sentinel A", "Sentinel B";
-  text-align: left;
-  text-shadow: none; }
+  letter-spacing: 1px; }
 
-#slide-23 h1 {
-  margin-bottom: 0.5em; }
-#slide-23 .strikethrough {
-  text-decoration: line-through;
-  color: #c5bc65; }
-#slide-23 .inner {
-  color: #eeeeee;
-  font-weight: 100; }
-#slide-23 .happier {
-  -webkit-transform: rotate(-13deg);
-  font-family: "ff-market-web", "Marker Felt";
-  font-style: normal;
-  color: #c5bc65;
-  display: block;
-  position: relative;
-  left: 1em;
-  bottom: 0.25em;
-  font-size: 2em; }
+#slide-23 h2 {
+  color: white;
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  text-shadow: 1px 1px 1px #d86712; }
+#slide-23 li.fragment {
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
+  text-shadow: 2px 2px 1px #d86712;
+  background: url("/img/triangle-white.svg") 0 0.4em no-repeat; }
 
 #slide-24 h2 {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-  color: #ffeeee;
-  text-shadow: 2px 2px 2px #e96a0a; }
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  color: #262e3b; }
 
-#slide-25 h1 {
-  color: #28d6c4;
-  text-shadow: 2px 2px 2px #146b62; }
-#slide-25 p {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica;
-  color: #223232; }
+#slide-25 h4 {
+  color: #262e3b;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica; }
 
-#slide-26, #slide-27 {
+#slide-27 h1 {
+  color: #262e3b;
+  font-family: "Sentinel A", "Sentinel B", Georgia;
+  text-shadow: none; }
+#slide-27 p {
+  color: #262e3b;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica; }
+
+#slide-28, #slide-29 {
   color: #223232;
   font-family: "Sentinel A", "Sentinel B"; }
-  #slide-26 h3, #slide-27 h3 {
+  #slide-28 h3, #slide-29 h3 {
     color: #223232;
     font-family: "Sentinel A", "Sentinel B"; }
-  #slide-26 ul, #slide-27 ul {
+  #slide-28 ul, #slide-29 ul {
     list-style: none; }
-    #slide-26 ul li, #slide-27 ul li {
+    #slide-28 ul li, #slide-29 ul li {
       margin: 0.8em 0;
       line-height: 1.3em;
-      font-size: 0.85em; }
-  #slide-26 span.book, #slide-27 span.book {
+      font-size: 0.85em;
+      background: none; }
+  #slide-28 span.book, #slide-29 span.book {
     font-style: italic; }
-  #slide-26 .whitney, #slide-27 .whitney {
+  #slide-28 .whitney, #slide-29 .whitney {
     font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica; }
-  #slide-26 .market, #slide-27 .market {
-    font-family: "ff-market-web", "Marker Felt"; }
-
-/********************************************
- * ANIMATIONS
- ******************************************** */
-@-webkit-keyframes Floatingx {
-  0% {
-    -webkit-transform: translate(0, 0px); }
-
-  65% {
-    -webkit-transform: translate(0, 23px); }
-
-  100% {
-    -webkit-transform: translate(0, 0px); } }
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translate(2px, 1px) rotate(0deg); }
-
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-
-  30% {
-    -webkit-transform: translate(0px, 2px) rotate(0deg); }
-
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg); }
-
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-
-  70% {
-    -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-
-  90% {
-    -webkit-transform: translate(2px, 2px) rotate(0deg); }
-
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg); } }
-
-@-webkit-keyframes moveclouds {
-  0% {
-    margin-left: 1000px; }
-
-  100% {
-    margin-left: -1000px; } }
-
-@-moz-keyframes moveclouds {
-  0% {
-    margin-left: 1000px; }
-
-  100% {
-    margin-left: -1000px; } }
-
-@-o-keyframes moveclouds {
-  0% {
-    margin-left: 1000px; }
-
-  100% {
-    margin-left: -1000px; } }
-
-@-webkit-keyframes blinker {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0; } }
